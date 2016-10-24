@@ -1,8 +1,10 @@
 <?php
 ini_set('display_errors', '1');
 include ('includes/init.php');
+include ('classes/meedo.php')
 $registry = new Registry();
-$db = new PDO('mysql:host=localhost;dbname=zeng', 'devel', '112233');
+
+//$db = new PDO('mysql:host=localhost;dbname=zeng', 'devel', '112233');
 $registry->set ('db', $db);
 $template = new Template($registry);
 $registry->set ('template', $template);
