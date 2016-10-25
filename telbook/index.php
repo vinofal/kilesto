@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" type="text/css" href="assets/style.css">
 <title>Ввод данных</title>
 </head>
 <body>
-<form class="contact_form" action="" method="post" name="tel_form">
+<form class="contact_form" action="classes/add.php" method="post" name="tel_form">
 <ul>
 <li>
-		<h2>Введите данные </h2>		
+		<h2>Введите данные</h2>		
 </li>
 <li>
 	<span class="required_notification">* Поля для заполнения</span>
 </li>
 <li>
-    	<label for="name">Имя</label>
-    	<input type="text" name="name"required/>
-    	<span class="form_hint">Введите email</span>
+    	<label for="name">Имя*</label>
+    	<input type="text" name="name"required />
+    	
 </li>
 <li>
-    <label for="organization">Организация</label>
-    <input type="text" name="organization"required/>
-    <span class="form_hint">Введите имя организации</span>
+    <label for="org">Организация*</label>
+    <input type="text" name="org" />
+    
 </li>
 <li>
-    <label for="phone">Телефон</label>
-    <input type="text" name="phone"required/>
-    <span class="form_hint">Введите номер телефона</span>
+    <label for="tel">Телефон*</label>
+    <input type="text" name="tel" />
+    
 </li>
 <li>
     <button class="submit" type="submit">Отправить</button>
